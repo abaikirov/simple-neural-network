@@ -7,13 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208370513EBC1133303735F4 /* Pods_NeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC47D9E38DDBE701160BB /* Pods_NeuralNetwork.framework */; };
 		B520150121CBF43F007EE727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520150021CBF43F007EE727 /* AppDelegate.swift */; };
 		B520150321CBF43F007EE727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520150221CBF43F007EE727 /* ViewController.swift */; };
 		B520150521CBF441007EE727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520150421CBF441007EE727 /* Assets.xcassets */; };
 		B520150821CBF441007EE727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520150621CBF441007EE727 /* Main.storyboard */; };
+		B520151321CBF4E4007EE727 /* NNActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520151221CBF4E4007EE727 /* NNActivation.swift */; };
+		B5397754223533F400683CD5 /* square0.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397744223533F200683CD5 /* square0.png */; };
+		B5397758223533F400683CD5 /* square6.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397748223533F300683CD5 /* square6.png */; };
+		B5397760223533F400683CD5 /* square12.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397750223533F400683CD5 /* square12.png */; };
+		B5397764223536FF00683CD5 /* square16.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397763223536FF00683CD5 /* square16.png */; };
+		B53977662235375900683CD5 /* square17.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977652235375900683CD5 /* square17.png */; };
+		B5397768223537A200683CD5 /* square18.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397767223537A200683CD5 /* square18.png */; };
+		B539776A223537F500683CD5 /* square19.png in Resources */ = {isa = PBXBuildFile; fileRef = B5397769223537F500683CD5 /* square19.png */; };
+		B539776C22353CB100683CD5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539776B22353CB100683CD5 /* ResultViewController.swift */; };
+		B53977792235401300683CD5 /* square24.png in Resources */ = {isa = PBXBuildFile; fileRef = B539776D2235401100683CD5 /* square24.png */; };
+		B539777A2235401300683CD5 /* square21.png in Resources */ = {isa = PBXBuildFile; fileRef = B539776E2235401200683CD5 /* square21.png */; };
+		B539777B2235401300683CD5 /* square25.png in Resources */ = {isa = PBXBuildFile; fileRef = B539776F2235401200683CD5 /* square25.png */; };
+		B539777C2235401300683CD5 /* square23.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977702235401200683CD5 /* square23.png */; };
+		B539777D2235401300683CD5 /* square27.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977712235401200683CD5 /* square27.png */; };
+		B539777E2235401300683CD5 /* square30.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977722235401200683CD5 /* square30.png */; };
+		B539777F2235401300683CD5 /* square20.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977732235401200683CD5 /* square20.png */; };
+		B53977802235401300683CD5 /* square28.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977742235401200683CD5 /* square28.png */; };
+		B53977812235401300683CD5 /* square31.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977752235401200683CD5 /* square31.png */; };
+		B53977822235401300683CD5 /* square22.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977762235401300683CD5 /* square22.png */; };
+		B53977832235401300683CD5 /* square26.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977772235401300683CD5 /* square26.png */; };
+		B53977842235401300683CD5 /* square29.png in Resources */ = {isa = PBXBuildFile; fileRef = B53977782235401300683CD5 /* square29.png */; };
+		B5A749B821CC07BF00DA2ED2 /* NNLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749B721CC07BF00DA2ED2 /* NNLayer.swift */; };
+		B5A749BB21CCCCB900DA2ED2 /* NNNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749BA21CCCCB900DA2ED2 /* NNNetwork.swift */; };
+		B5A749C621CE10E600DA2ED2 /* NNInputLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749C521CE10E600DA2ED2 /* NNInputLayer.swift */; };
+		B5A749C821CE10FB00DA2ED2 /* NNHiddenLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749C721CE10FB00DA2ED2 /* NNHiddenLayer.swift */; };
+		B5A749CA21CE111100DA2ED2 /* NNOutputLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749C921CE111100DA2ED2 /* NNOutputLayer.swift */; };
+		B5A749CD21CEA81300DA2ED2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749CC21CEA81300DA2ED2 /* ChartViewController.swift */; };
+		B5A749CF21CEAC2900DA2ED2 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A749CE21CEAC2900DA2ED2 /* ImageService.swift */; };
+		B5B98B7921D14865008495E2 /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B98B7821D14865008495E2 /* Squares.swift */; };
+		B5B98B7B21D151F9008495E2 /* SquareGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B98B7A21D151F9008495E2 /* SquareGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841F83FBF30814A831ED3398 /* Pods-NeuralNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuralNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeuralNetwork/Pods-NeuralNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		A23DC47D9E38DDBE701160BB /* Pods_NeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52014FD21CBF43F007EE727 /* NeuralNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuralNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520150021CBF43F007EE727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520150221CBF43F007EE727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +54,37 @@
 		B520150721CBF441007EE727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B520150921CBF441007EE727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B520150A21CBF441007EE727 /* NeuralNetwork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuralNetwork.entitlements; sourceTree = "<group>"; };
+		B520151221CBF4E4007EE727 /* NNActivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNActivation.swift; sourceTree = "<group>"; };
+		B5397744223533F200683CD5 /* square0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square0.png; sourceTree = "<group>"; };
+		B5397748223533F300683CD5 /* square6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square6.png; sourceTree = "<group>"; };
+		B5397750223533F400683CD5 /* square12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square12.png; sourceTree = "<group>"; };
+		B5397763223536FF00683CD5 /* square16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square16.png; sourceTree = "<group>"; };
+		B53977652235375900683CD5 /* square17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square17.png; sourceTree = "<group>"; };
+		B5397767223537A200683CD5 /* square18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square18.png; sourceTree = "<group>"; };
+		B5397769223537F500683CD5 /* square19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square19.png; sourceTree = "<group>"; };
+		B539776B22353CB100683CD5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B539776D2235401100683CD5 /* square24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square24.png; sourceTree = "<group>"; };
+		B539776E2235401200683CD5 /* square21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square21.png; sourceTree = "<group>"; };
+		B539776F2235401200683CD5 /* square25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square25.png; sourceTree = "<group>"; };
+		B53977702235401200683CD5 /* square23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square23.png; sourceTree = "<group>"; };
+		B53977712235401200683CD5 /* square27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square27.png; sourceTree = "<group>"; };
+		B53977722235401200683CD5 /* square30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square30.png; sourceTree = "<group>"; };
+		B53977732235401200683CD5 /* square20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square20.png; sourceTree = "<group>"; };
+		B53977742235401200683CD5 /* square28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square28.png; sourceTree = "<group>"; };
+		B53977752235401200683CD5 /* square31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square31.png; sourceTree = "<group>"; };
+		B53977762235401300683CD5 /* square22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square22.png; sourceTree = "<group>"; };
+		B53977772235401300683CD5 /* square26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square26.png; sourceTree = "<group>"; };
+		B53977782235401300683CD5 /* square29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square29.png; sourceTree = "<group>"; };
+		B5A749B721CC07BF00DA2ED2 /* NNLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNLayer.swift; sourceTree = "<group>"; };
+		B5A749BA21CCCCB900DA2ED2 /* NNNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNNetwork.swift; sourceTree = "<group>"; };
+		B5A749C521CE10E600DA2ED2 /* NNInputLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNInputLayer.swift; sourceTree = "<group>"; };
+		B5A749C721CE10FB00DA2ED2 /* NNHiddenLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNHiddenLayer.swift; sourceTree = "<group>"; };
+		B5A749C921CE111100DA2ED2 /* NNOutputLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNOutputLayer.swift; sourceTree = "<group>"; };
+		B5A749CC21CEA81300DA2ED2 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		B5A749CE21CEAC2900DA2ED2 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		B5B98B7821D14865008495E2 /* Squares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squares.swift; sourceTree = "<group>"; };
+		B5B98B7A21D151F9008495E2 /* SquareGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGenerator.swift; sourceTree = "<group>"; };
+		DCE0E58BEF84D0FE9E768875 /* Pods-NeuralNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuralNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeuralNetwork/Pods-NeuralNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +92,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208370513EBC1133303735F4 /* Pods_NeuralNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0CF22AF2856D361CAFF863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0E58BEF84D0FE9E768875 /* Pods-NeuralNetwork.debug.xcconfig */,
+				841F83FBF30814A831ED3398 /* Pods-NeuralNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69FB43717B02DB365A56EED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC47D9E38DDBE701160BB /* Pods_NeuralNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B52014F421CBF43F007EE727 = {
 			isa = PBXGroup;
 			children = (
+				B520151021CBF4C6007EE727 /* Source */,
 				B52014FF21CBF43F007EE727 /* NeuralNetwork */,
 				B52014FE21CBF43F007EE727 /* Products */,
+				1F0CF22AF2856D361CAFF863 /* Pods */,
+				69FB43717B02DB365A56EED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +148,83 @@
 			path = NeuralNetwork;
 			sourceTree = "<group>";
 		};
+		B520151021CBF4C6007EE727 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B5397742223533DA00683CD5 /* TrainingData */,
+				B5A749CB21CEA80000DA2ED2 /* View */,
+				B5A749B921CCCCA700DA2ED2 /* Network */,
+				B5A749B621CC07AF00DA2ED2 /* Layer */,
+				B520151121CBF4D3007EE727 /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B520151121CBF4D3007EE727 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B520151221CBF4E4007EE727 /* NNActivation.swift */,
+				B5A749CE21CEAC2900DA2ED2 /* ImageService.swift */,
+				B5B98B7821D14865008495E2 /* Squares.swift */,
+				B5B98B7A21D151F9008495E2 /* SquareGenerator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5397742223533DA00683CD5 /* TrainingData */ = {
+			isa = PBXGroup;
+			children = (
+				B53977732235401200683CD5 /* square20.png */,
+				B539776E2235401200683CD5 /* square21.png */,
+				B53977762235401300683CD5 /* square22.png */,
+				B53977702235401200683CD5 /* square23.png */,
+				B539776D2235401100683CD5 /* square24.png */,
+				B539776F2235401200683CD5 /* square25.png */,
+				B53977772235401300683CD5 /* square26.png */,
+				B53977712235401200683CD5 /* square27.png */,
+				B53977742235401200683CD5 /* square28.png */,
+				B53977782235401300683CD5 /* square29.png */,
+				B53977722235401200683CD5 /* square30.png */,
+				B53977752235401200683CD5 /* square31.png */,
+				B5397744223533F200683CD5 /* square0.png */,
+				B5397748223533F300683CD5 /* square6.png */,
+				B5397750223533F400683CD5 /* square12.png */,
+				B5397763223536FF00683CD5 /* square16.png */,
+				B53977652235375900683CD5 /* square17.png */,
+				B5397767223537A200683CD5 /* square18.png */,
+				B5397769223537F500683CD5 /* square19.png */,
+			);
+			path = TrainingData;
+			sourceTree = "<group>";
+		};
+		B5A749B621CC07AF00DA2ED2 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B5A749B721CC07BF00DA2ED2 /* NNLayer.swift */,
+				B5A749C521CE10E600DA2ED2 /* NNInputLayer.swift */,
+				B5A749C721CE10FB00DA2ED2 /* NNHiddenLayer.swift */,
+				B5A749C921CE111100DA2ED2 /* NNOutputLayer.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		B5A749B921CCCCA700DA2ED2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5A749BA21CCCCB900DA2ED2 /* NNNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B5A749CB21CEA80000DA2ED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5A749CC21CEA81300DA2ED2 /* ChartViewController.swift */,
+				B539776B22353CB100683CD5 /* ResultViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B520150D21CBF441007EE727 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */;
 			buildPhases = (
+				8701AFCE6EFD43E1C44AA5AB /* [CP] Check Pods Manifest.lock */,
 				B52014F921CBF43F007EE727 /* Sources */,
 				B52014FA21CBF43F007EE727 /* Frameworks */,
 				B52014FB21CBF43F007EE727 /* Resources */,
+				5DE6EFCBC337BF3F464689D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,19 +285,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5397764223536FF00683CD5 /* square16.png in Resources */,
+				B53977802235401300683CD5 /* square28.png in Resources */,
+				B539777D2235401300683CD5 /* square27.png in Resources */,
+				B53977662235375900683CD5 /* square17.png in Resources */,
+				B5397760223533F400683CD5 /* square12.png in Resources */,
+				B5397768223537A200683CD5 /* square18.png in Resources */,
+				B53977812235401300683CD5 /* square31.png in Resources */,
+				B539777F2235401300683CD5 /* square20.png in Resources */,
+				B53977832235401300683CD5 /* square26.png in Resources */,
 				B520150521CBF441007EE727 /* Assets.xcassets in Resources */,
+				B539777C2235401300683CD5 /* square23.png in Resources */,
+				B53977792235401300683CD5 /* square24.png in Resources */,
+				B53977842235401300683CD5 /* square29.png in Resources */,
 				B520150821CBF441007EE727 /* Main.storyboard in Resources */,
+				B539777B2235401300683CD5 /* square25.png in Resources */,
+				B53977822235401300683CD5 /* square22.png in Resources */,
+				B5397758223533F400683CD5 /* square6.png in Resources */,
+				B5397754223533F400683CD5 /* square0.png in Resources */,
+				B539777A2235401300683CD5 /* square21.png in Resources */,
+				B539776A223537F500683CD5 /* square19.png in Resources */,
+				B539777E2235401300683CD5 /* square30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DE6EFCBC337BF3F464689D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NeuralNetwork/Pods-NeuralNetwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeuralNetwork/Pods-NeuralNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8701AFCE6EFD43E1C44AA5AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeuralNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B52014F921CBF43F007EE727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B539776C22353CB100683CD5 /* ResultViewController.swift in Sources */,
+				B5A749C621CE10E600DA2ED2 /* NNInputLayer.swift in Sources */,
 				B520150321CBF43F007EE727 /* ViewController.swift in Sources */,
+				B5A749B821CC07BF00DA2ED2 /* NNLayer.swift in Sources */,
+				B5A749C821CE10FB00DA2ED2 /* NNHiddenLayer.swift in Sources */,
+				B5B98B7B21D151F9008495E2 /* SquareGenerator.swift in Sources */,
+				B5B98B7921D14865008495E2 /* Squares.swift in Sources */,
+				B5A749CA21CE111100DA2ED2 /* NNOutputLayer.swift in Sources */,
+				B5A749CD21CEA81300DA2ED2 /* ChartViewController.swift in Sources */,
+				B520151321CBF4E4007EE727 /* NNActivation.swift in Sources */,
+				B5A749BB21CCCCB900DA2ED2 /* NNNetwork.swift in Sources */,
+				B5A749CF21CEAC2900DA2ED2 /* ImageService.swift in Sources */,
 				B520150121CBF43F007EE727 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +510,14 @@
 		};
 		B520150E21CBF441007EE727 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE0E58BEF84D0FE9E768875 /* Pods-NeuralNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NeuralNetwork/NeuralNetwork.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 693KPRUMV4;
 				INFOPLIST_FILE = NeuralNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,17 +525,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abaikirov.NeuralNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		B520150F21CBF441007EE727 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841F83FBF30814A831ED3398 /* Pods-NeuralNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NeuralNetwork/NeuralNetwork.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 693KPRUMV4;
 				INFOPLIST_FILE = NeuralNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +547,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abaikirov.NeuralNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

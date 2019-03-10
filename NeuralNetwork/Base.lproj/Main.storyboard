@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="NeuralNetwork" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -693,7 +694,7 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="Zbb-Tp-Wfe" kind="relationship" relationship="window.shadowedContentViewController" id="maU-0u-7Hp"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -703,15 +704,108 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="NeuralNetwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="255"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C24-ip-Qr3">
+                                <rect key="frame" x="184" y="1" width="113" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Sdg-2C-sTz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onOpenImage:" target="XfG-lQ-9wD" id="mgW-cP-XlM"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5N-CT-LoP">
+                                <rect key="frame" x="8" y="37" width="464" height="210"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="i01-DP-pSp"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tto-bQ-mZn">
+                                <rect key="frame" x="369" y="1" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Train" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eJb-oH-Lq4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Zbb-Tp-Wfe" kind="show" identifier="to_chart_view" id="saF-dS-7gB"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9w-zc-nlO">
+                                <rect key="frame" x="48" y="1" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fBJ-sT-7Le">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="j8U-ke-ah6" kind="show" identifier="to_actual_data" id="4h8-fd-4uZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C24-ip-Qr3" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="5FX-rF-lV3"/>
+                            <constraint firstItem="c5N-CT-LoP" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="GIa-WR-lyo"/>
+                            <constraint firstItem="c5N-CT-LoP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="HOQ-SN-WAX"/>
+                            <constraint firstItem="C24-ip-Qr3" firstAttribute="top" secondItem="c5N-CT-LoP" secondAttribute="bottom" constant="8" id="f7L-p5-ZyH"/>
+                            <constraint firstAttribute="trailing" secondItem="c5N-CT-LoP" secondAttribute="trailing" constant="8" id="rPL-Ah-q6G"/>
+                            <constraint firstAttribute="bottom" secondItem="C24-ip-Qr3" secondAttribute="bottom" constant="8" id="z6R-y9-ooP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="c5N-CT-LoP" id="ccc-FD-cUo"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-151" y="739"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="tew-mA-8yD">
+            <objects>
+                <viewController id="Zbb-Tp-Wfe" customClass="ChartViewController" customModule="NeuralNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="dCd-Ij-8nx">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="nWA-oc-pjR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="738"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="CgJ-tW-EGE">
+            <objects>
+                <viewController id="j8U-ke-ah6" customClass="ResultViewController" customModule="NeuralNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="cUv-dx-dMb">
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEi-vj-Lv3">
+                                <rect key="frame" x="-2" y="0.0" width="497" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="SQUARE" id="PUK-Fj-0Bo">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="mainTextField" destination="PEi-vj-Lv3" id="fXt-sM-SdD"/>
+                        <outlet property="mainTextFieldCell" destination="PUK-Fj-0Bo" id="R3F-Op-lo1"/>
+                    </connections>
+                </viewController>
+                <customObject id="jBV-pz-KHM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.5" y="1304"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="saF-dS-7gB"/>
+    </inferredMetricsTieBreakers>
 </document>
